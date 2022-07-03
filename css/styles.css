@@ -1,8 +1,22 @@
 :root {
-    --color-primary: #ea7bc8;
-    --color-secondary: #478cf4;
-    --color-third: #f9ca33;
-    --color-accent: #5cc5c2;
-    --color-heading: #42434a;
-    --color-body: #42434a;
+  --color-primary: #ea7bc8;
+  --color-secondary: #478cf4;
+  --color-third: #f9ca33;
+  --color-accent: #5cc5c2;
+  --color-heading: #42434a;
+  --color-body: #42434a;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+}
+
+h1,
+h2 {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: var(--color-secondary);
 }
