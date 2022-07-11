@@ -22,34 +22,17 @@ body {
 h1,
 h2 {
   font-family: Oswald, Arial, Helvetica, sans-serif;
-  margin-bottom: 4rem;
 }
 
 h1 {
   color: var(--color-secondary);
-  font-size: 9rem;
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
   font-size: 4rem;
-}
-
-p {
-  margin-top: 0;
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 1.8rem;
-  }
-
-  h1 {
-    font-size: 10rem;
-  }
-
-  h2 {
-    font-size: 4rem;
-  }
 }
 
 /* Icons */
@@ -61,13 +44,61 @@ p {
   /* don't foget to change color to white */
 }
 
-/* Grids */
-.grid {
-  display: grid;
+/* ----------- MY STUFF ----------- */
+/* .grid-container {
+  display: inline-grid;
+  grid-template-columns: auto, auto;
 }
 
-@media screen and (min-width: 768px) {
-  .grid--1x2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.a {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.b {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 50px 0 0 40px;
+  width: 60%;
+} */
+
+.hero {
+  display: inline-grid;
+  grid-template-columns: auto, auto;
+}
+
+.hero .hero__picture {
+  position: relative;
+  width: 550px;
+  height: 600px;
+  margin-bottom: 80px;
+}
+.hero .hero__picture:before {
+  position: absolute;
+  z-index: -1;
+  left: 40px;
+  top: 80px;
+  width: 100%;
+  height: 100%;
+  background: rgb(249, 202, 51);
+  background: linear-gradient(
+    45deg,
+    rgba(249, 202, 51, 1) 0%,
+    rgba(234, 123, 200, 1) 100%
+  );
+  content: "";
+}
+
+.hero .hero__picture img {
+  width: 550px;
+  height: 600px;
+  object-fit: cover;
+  object-position: 0 -35px;
+}
+
+.hero .hero__header {
+  position: absolute;
+  right: 500px;
+  width: 300px;
+  text-align: left;
 }

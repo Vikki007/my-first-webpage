@@ -1,0 +1,11 @@
+<section class="hero">
+  <div class="hero__picture">
+    <img src="images/student.jpeg" alt="Happy student" />
+  </div>
+
+  <header class="hero__header">
+    <h1>Who said education was boring?</h1>
+    <h2>We play and we learn</h2>
+    <p>Images from Freepik</p>
+  </header>
+</section>
