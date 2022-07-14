@@ -149,7 +149,7 @@ li a {
   text-decoration: none;
 }
 
-/* Callouts */
+/* Wrapper */
 
 .wrapper {
   display: flex;
@@ -187,4 +187,19 @@ li a {
 
 .d {
   background: var(--color-secondary);
+}
+
+/* Block */
+.block {
+  padding: 9rem 2rem;
+  border: 2px solid var(--color-primary);
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--pink {
+  background: var(--color-primary);
+  color: #fff;
 }
